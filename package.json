@@ -1,0 +1,30 @@
+{
+  "name": "connect-cassandra",
+	"description": "a cassandra session store for connect.",
+	"version": "0.0.1",
+  "licenses": [{
+    "type": "MIT",
+    "url": "https://github.com/B2MSolutions/connect-cassandra/raw/master/LICENSE"
+  }],
+  "author": { "name": "B2M Solutions", "url": "https://github.com/B2MSolutions" },
+  "contributors": [
+    { "name": "Roy Lines", "url":"http://roylines.co.uk" },
+    { "name": "James Bloomer", "url":"https://github.com/jamesbloomer" }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/B2MSolutions/connect-cassandra.git"
+  },
+  "keywords": ["cassandra", "connect", "session"],
+	"dependencies": {
+  },
+  "devDependencies" : {
+		"mocha" : "x.x.x",
+    "connect" : "x.x.x",
+    "helenus" : "x.x.x"
+	},
+  "main": "./lib/connect-cassandra",
+  "scripts": { "test": "mocha test/*_test.js --reporter spec" },
+  "engines": { "node": ">= 0.6.0" }
+}
+
