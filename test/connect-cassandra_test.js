@@ -36,6 +36,9 @@ describe('connect-cassandra', function() {
     it('should not throw', function() {
       store = new CassandraStore({ pool: testpool });
     });
+    it('should not error if columnfamily already exists', function() {
+      var store2 = new CassandraStore({ pool: testpool });
+    });
   });
   describe('#set', function() {
     it('should not throw', function(done) {
