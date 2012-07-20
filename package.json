@@ -1,7 +1,7 @@
 {
   "name": "connect-cassandra",
 	"description": "a cassandra session store for connect.",
-	"version": "0.1.0",
+	"version": "0.1.1",
   "licenses": [{
     "type": "MIT",
     "url": "https://github.com/B2MSolutions/connect-cassandra/raw/master/LICENSE"
