@@ -15,6 +15,7 @@ var testpool = new helenus.ConnectionPool({
 
 var store = null;
 var cookie = { cookie: { maxAge: 20000 }, name: 'cassandra' };
+var sid = '123\\u';
 
 describe('connect-cassandra', function() {
   before(function(done) {
@@ -38,12 +39,12 @@ describe('connect-cassandra', function() {
   });
   describe('#set', function() {
     it('should not throw', function(done) {
-      store.set('123', cookie, done);
+      store.set(sid, cookie, done);
     });
   });
   describe('#get', function() {
     it('should return cookie for existing sid', function(done) {
-      store.get('123', function(e, d) {
+      store.get(sid, function(e, d) {
         assert.deepEqual(d, cookie);
         done(e);
       });
@@ -72,11 +73,11 @@ describe('connect-cassandra', function() {
   });
   describe('#destroy', function() {
     it('should return null for destroyed sid', function(done) {
-      store.get('123', function(e, d) {
+      store.get(sid, function(e, d) {
         assert.deepEqual(d, cookie);
-        store.destroy('123', function(e2) {
+        store.destroy(sid, function(e2) {
           assert.equal(e2, null);
-          store.get('123', function(e3, d3) {
+          store.get(sid, function(e3, d3) {
             assert.equal(d3, null);
             done(e3);
           });
