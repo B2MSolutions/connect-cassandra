@@ -1,3 +1,4 @@
+[![build status](https://secure.travis-ci.org/B2MSolutions/connect-cassandra.png)](http://travis-ci.org/B2MSolutions/connect-cassandra)
 # connect-cassandra
 A Cassandra session store for connect.
 
