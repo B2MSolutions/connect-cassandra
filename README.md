@@ -25,3 +25,4 @@ Re-uses a [helenus](https://github.com/simplereach/helenus) pool and creates a c
 
 ## Contributors
 Pair programmed by [Roy Lines](http://roylines.co.uk) and [James Bloomer](https://github.com/jamesbloomer).
+Contributions from [David Wetterau](https://github.com/dwetterau).
