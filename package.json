@@ -1,7 +1,7 @@
 {
   "name": "connect-cassandra",
 	"description": "a cassandra session store for connect.",
-	"version": "0.1.2",
+	"version": "0.1.3",
   "licenses": [{
     "type": "MIT",
     "url": "https://github.com/B2MSolutions/connect-cassandra/raw/master/LICENSE"
@@ -9,7 +9,8 @@
   "author": { "name": "B2M Solutions", "url": "https://github.com/B2MSolutions" },
   "contributors": [
     { "name": "Roy Lines", "url":"http://roylines.co.uk" },
-    { "name": "James Bloomer", "url":"https://github.com/jamesbloomer" }
+    { "name": "James Bloomer", "url":"https://github.com/jamesbloomer" },
+    { "name": "David Wetterau", "url":"https://github.com/dwetterau"}
   ],
   "repository": {
     "type": "git",
